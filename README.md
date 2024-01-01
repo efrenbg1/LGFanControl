@@ -1,7 +1,7 @@
 ## LG Gram Automatic Fan Control
 
 #### Why?
-> New LG Grams with 13th gen CPUs are hot. Nothing we can't change there.
+> New LG Grams with 13th gen CPUs are hot. Nothing we can change there.
 > 
 > When connected to the AC, even normal browsing will keep the cooling fan ON most of the time which can be quite annoying. LG provides four modes for cooling, but changing between them all the time is just a pain in the ass...
 
@@ -20,3 +20,5 @@
 > To visualize the available functions you can use (is free): https://www.jetbrains.com/es-es/decompiler/
 >
 > The program must run as ADMIN, to have it run on startup you can use Task Scheduler in Windows. An example of the task can be found in the file `WindowsTask.xml`. You can import it directly into the Task Scheduler
+
+Many thanks @Falcosc for the idea on how to change the modes from powershell: https://www.reddit.com/r/LGgram/comments/vgy9l1/2021_gram_does_anyone_know_how_to_set_the_battery/?utm_source=share&utm_medium=web2x&context=3
