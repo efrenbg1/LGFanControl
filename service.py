@@ -37,6 +37,7 @@ if True:
 lg = LGDeviceController()
 c = Computer()
 c.IsCpuEnabled = True
+c.Open()
 
 # Set the last cooling mode state to the currently set one
 lastState = lg.Get_SystemTempMode()
@@ -45,9 +46,8 @@ lastState = lg.Get_SystemTempMode()
 while True:
 
     # Get the sensor for reading the temperature (should be the 30th on the list)
-    c.Open()
+    c.Hardware[0].Update()
     d = c.Hardware[0].Sensors[30]
-    c.Close()
 
     # If CPU temperature is greater than 75ºC we switch to Normal mode
     if d.Value > 75 and lastState != 1:
@@ -59,4 +59,4 @@ while True:
         lg.Set_SystemTempMode(3)
         lastState = 3
 
-    time.sleep(15)
+    time.sleep(30)

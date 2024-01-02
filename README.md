@@ -6,7 +6,7 @@
 > When connected to the AC, even normal browsing will keep the cooling fan ON most of the time which can be quite annoying. LG provides four modes for cooling, but changing between them all the time is just a pain in the ass...
 
 #### What does it do?
-> To solve it I've created a Python script which reads the temperature every 15 seconds and switches between Normal and Silent mode automatically.
+> To solve it I've created a Python script which reads the temperature every 30 seconds and switches between Normal and Silent mode automatically.
 
 #### How it works?
 > To read the CPU package temperature I use `LibreHardwareMonitorLib.dll`
