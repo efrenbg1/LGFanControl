@@ -50,7 +50,7 @@ while True:
     d = c.Hardware[0].Sensors[30]
 
     # If CPU temperature is greater than 75ºC we switch to Normal mode
-    if d.Value > 75 and lastState != 1:
+    if d.Value > 70 and lastState != 1:
         lg.Set_SystemTempMode(1)
         lastState = 1
     
